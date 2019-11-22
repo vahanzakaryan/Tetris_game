@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Tetris: Play now!
+        </title>
+        <link rel="stylesheet" type="text/css" href="playCSS.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class = "butDiv">
+            <a href="tetris.html">
+                <button class = "playButton">
+                    Back to menu
+                </button>
+            </a>
+        </div>
+        <div class = "restart">
+            <button onclick = "restartTheGame()" class = "playButton">
+                Restart
+            </button>
+        </div>
+        <div class = "scoreText">
+            <p id = "score">
+                Score: 0
+            </p>
+            <p id = "highScore">
+                High Score: 0
+            </p>
+        </div>
+        <img class = "iphoneImage" src = "iphone.png">
+        <img class = "macImage" src = "macScreen.png">
+        <center>
+            <p id = "gameOverText">
+            </p>
+            <table class = "playgroundTable">
+                <tr>
+                    <td id="myDIV40"></td>
+                    <td id="myDIV41"></td>
+                    <td id="myDIV42"></td>
+                    <td id="myDIV43"></td>
+                    <td id="myDIV44"></td>
+                    <td id="myDIV45"></td>
+                    <td id="myDIV46"></td>
+                    <td id="myDIV47"></td>
+                    <td id="myDIV48"></td>
+                    <td id="myDIV49"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV50"></td>
+                    <td id="myDIV51"></td>
+                    <td id="myDIV52"></td>
+                    <td id="myDIV53"></td>
+                    <td id="myDIV54"></td>
+                    <td id="myDIV55"></td>
+                    <td id="myDIV56"></td>
+                    <td id="myDIV57"></td>
+                    <td id="myDIV58"></td>
+                    <td id="myDIV59"></td>
+                </tr>    
+                <tr>
+                    <td id="myDIV60"></td>
+                    <td id="myDIV61"></td>
+                    <td id="myDIV62"></td>
+                    <td id="myDIV63"></td>
+                    <td id="myDIV64"></td>
+                    <td id="myDIV65"></td>
+                    <td id="myDIV66"></td>
+                    <td id="myDIV67"></td>
+                    <td id="myDIV68"></td>
+                    <td id="myDIV69"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV70"></td>
+                    <td id="myDIV71"></td>
+                    <td id="myDIV72"></td>
+                    <td id="myDIV73"></td>
+                    <td id="myDIV74"></td>
+                    <td id="myDIV75"></td>
+                    <td id="myDIV76"></td>
+                    <td id="myDIV77"></td>
+                    <td id="myDIV78"></td>
+                    <td id="myDIV79"></td>
+                </tr>    
+                <tr>
+                    <td id="myDIV80"></td>
+                    <td id="myDIV81"></td>
+                    <td id="myDIV82"></td>
+                    <td id="myDIV83"></td>
+                    <td id="myDIV84"></td>
+                    <td id="myDIV85"></td>
+                    <td id="myDIV86"></td>
+                    <td id="myDIV87"></td>
+                    <td id="myDIV88"></td>
+                    <td id="myDIV89"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV90"></td>
+                    <td id="myDIV91"></td>
+                    <td id="myDIV92"></td>
+                    <td id="myDIV93"></td>
+                    <td id="myDIV94"></td>
+                    <td id="myDIV95"></td>
+                    <td id="myDIV96"></td>
+                    <td id="myDIV97"></td>
+                    <td id="myDIV98"></td>
+                    <td id="myDIV99"></td>
+                </tr>    
+                <tr>
+                    <td id="myDIV100"></td>
+                    <td id="myDIV101"></td>
+                    <td id="myDIV102"></td>
+                    <td id="myDIV103"></td>
+                    <td id="myDIV104"></td>
+                    <td id="myDIV105"></td>
+                    <td id="myDIV106"></td>
+                    <td id="myDIV107"></td>
+                    <td id="myDIV108"></td>
+                    <td id="myDIV109"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV110"></td>
+                    <td id="myDIV111"></td>
+                    <td id="myDIV112"></td>
+                    <td id="myDIV113"></td>
+                    <td id="myDIV114"></td>
+                    <td id="myDIV115"></td>
+                    <td id="myDIV116"></td>
+                    <td id="myDIV117"></td>
+                    <td id="myDIV118"></td>
+                    <td id="myDIV119"></td>
+                </tr>   
+                <tr>
+                    <td id="myDIV120"></td>
+                    <td id="myDIV121"></td>
+                    <td id="myDIV122"></td>
+                    <td id="myDIV123"></td>
+                    <td id="myDIV124"></td>
+                    <td id="myDIV125"></td>
+                    <td id="myDIV126"></td>
+                    <td id="myDIV127"></td>
+                    <td id="myDIV128"></td>
+                    <td id="myDIV129"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV130"></td>
+                    <td id="myDIV131"></td>
+                    <td id="myDIV132"></td>
+                    <td id="myDIV133"></td>
+                    <td id="myDIV134"></td>
+                    <td id="myDIV135"></td>
+                    <td id="myDIV136"></td>
+                    <td id="myDIV137"></td>
+                    <td id="myDIV138"></td>
+                    <td id="myDIV139"></td>
+                </tr>    
+                <tr>
+                    <td id="myDIV140"></td>
+                    <td id="myDIV141"></td>
+                    <td id="myDIV142"></td>
+                    <td id="myDIV143"></td>
+                    <td id="myDIV144"></td>
+                    <td id="myDIV145"></td>
+                    <td id="myDIV146"></td>
+                    <td id="myDIV147"></td>
+                    <td id="myDIV148"></td>
+                    <td id="myDIV149"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV150"></td>
+                    <td id="myDIV151"></td>
+                    <td id="myDIV152"></td>
+                    <td id="myDIV153"></td>
+                    <td id="myDIV154"></td>
+                    <td id="myDIV155"></td>
+                    <td id="myDIV156"></td>
+                    <td id="myDIV157"></td>
+                    <td id="myDIV158"></td>
+                    <td id="myDIV159"></td>
+                </tr>    
+                <tr>
+                    <td id="myDIV160"></td>
+                    <td id="myDIV161"></td>
+                    <td id="myDIV162"></td>
+                    <td id="myDIV163"></td>
+                    <td id="myDIV164"></td>
+                    <td id="myDIV165"></td>
+                    <td id="myDIV166"></td>
+                    <td id="myDIV167"></td>
+                    <td id="myDIV168"></td>
+                    <td id="myDIV169"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV170"></td>
+                    <td id="myDIV171"></td>
+                    <td id="myDIV172"></td>
+                    <td id="myDIV173"></td>
+                    <td id="myDIV174"></td>
+                    <td id="myDIV175"></td>
+                    <td id="myDIV176"></td>
+                    <td id="myDIV177"></td>
+                    <td id="myDIV178"></td>
+                    <td id="myDIV179"></td>
+                </tr>    
+                <tr>
+                    <td id="myDIV180"></td>
+                    <td id="myDIV181"></td>
+                    <td id="myDIV182"></td>
+                    <td id="myDIV183"></td>
+                    <td id="myDIV184"></td>
+                    <td id="myDIV185"></td>
+                    <td id="myDIV186"></td>
+                    <td id="myDIV187"></td>
+                    <td id="myDIV188"></td>
+                    <td id="myDIV189"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV190"></td>
+                    <td id="myDIV191"></td>
+                    <td id="myDIV192"></td>
+                    <td id="myDIV193"></td>
+                    <td id="myDIV194"></td>
+                    <td id="myDIV195"></td>
+                    <td id="myDIV196"></td>
+                    <td id="myDIV197"></td>
+                    <td id="myDIV198"></td>
+                    <td id="myDIV199"></td>
+                </tr>  
+                <tr>
+                    <td id="myDIV200"></td>
+                    <td id="myDIV201"></td>
+                    <td id="myDIV202"></td>
+                    <td id="myDIV203"></td>
+                    <td id="myDIV204"></td>
+                    <td id="myDIV205"></td>
+                    <td id="myDIV206"></td>
+                    <td id="myDIV207"></td>
+                    <td id="myDIV208"></td>
+                    <td id="myDIV209"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV210"></td>
+                    <td id="myDIV211"></td>
+                    <td id="myDIV212"></td>
+                    <td id="myDIV213"></td>
+                    <td id="myDIV214"></td>
+                    <td id="myDIV215"></td>
+                    <td id="myDIV216"></td>
+                    <td id="myDIV217"></td>
+                    <td id="myDIV218"></td>
+                    <td id="myDIV219"></td>
+                </tr>    
+                <tr>
+                    <td id="myDIV220"></td>
+                    <td id="myDIV221"></td>
+                    <td id="myDIV222"></td>
+                    <td id="myDIV223"></td>
+                    <td id="myDIV224"></td>
+                    <td id="myDIV225"></td>
+                    <td id="myDIV226"></td>
+                    <td id="myDIV227"></td>
+                    <td id="myDIV228"></td>
+                    <td id="myDIV229"></td>
+                </tr>
+                <tr>
+                    <td id="myDIV230"></td>
+                    <td id="myDIV231"></td>
+                    <td id="myDIV232"></td>
+                    <td id="myDIV233"></td>
+                    <td id="myDIV234"></td>
+                    <td id="myDIV235"></td>
+                    <td id="myDIV236"></td>
+                    <td id="myDIV237"></td>
+                    <td id="myDIV238"></td>
+                    <td id="myDIV239"></td>
+                </tr>    
+            </table>
+        </center>
+        <div class = "showTableDiv">
+            <table class = "playgroundTable">
+                <tr>
+                    <td></td>
+                    <td id = "showDiv00" class = "showTabletd"></td>
+                    <td id = "showDiv01" class = "showTabletd"></td>
+                    <td id = "showDiv02" class = "showTabletd"></td>
+                    <td id = "showDiv03" class = "showTabletd"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id = "showDiv10" class = "showTabletd"></td>
+                    <td id = "showDiv11" class = "showTabletd"></td>
+                    <td id = "showDiv12" class = "showTabletd"></td>
+                    <td id = "showDiv13" class = "showTabletd"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id = "showDiv20" class = "showTabletd"></td>
+                    <td id = "showDiv21" class = "showTabletd"></td>
+                    <td id = "showDiv22" class = "showTabletd"></td>
+                    <td id = "showDiv23" class = "showTabletd"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id = "showDiv30" class = "showTabletd"></td>
+                    <td id = "showDiv31" class = "showTabletd"></td>
+                    <td id = "showDiv32" class = "showTabletd"></td>
+                    <td id = "showDiv33" class = "showTabletd"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script src = "Tetris.js" type="text/javascript">
+    function testFunc(event){
+        if(event.keyCode === 37){
+            newArr = rotateMatrix(newArr);
+        }
+    }
+    setInterval(testFunc,0);
+    </script>
+</html>

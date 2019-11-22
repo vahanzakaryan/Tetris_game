@@ -1,0 +1,107 @@
+body{
+    background: url("black.jpg");
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+}
+.playgroundTable{
+    border: 1px solid black;
+    margin-top: 1.8%;
+}
+table, td {
+    border: 1.4px solid rgb(27, 27, 27);
+    border-collapse: collapse;
+    opacity: 1;
+}
+td{
+    width: 28px;
+    height: 30px;
+    background-color: rgb(22, 22, 22);
+}
+.showTabletd{
+    width: 32px;
+    height: 32px;
+    background-color: rgb(22, 22, 22);
+}
+.showTableDiv{
+    position: absolute;
+    margin-top: -33%;
+    margin-left: 72.4%;
+}
+.scoreText{
+    margin-top: 11%;
+    margin-left: 10.7%;
+    position: absolute;
+    color: white;
+    font-size: 240%;
+}
+#gameOverText{
+    margin-top: 29%;
+    margin-left: 67.5%;
+    position: absolute;
+    color: white;
+    font-size: 215%;
+}
+#score{
+    margin: 0;
+}
+#highScore{
+    margin: 0;
+    margin-top: 9%;
+}
+.mystyle {
+    background-color: rgb(255, 187, 0);
+}
+.mystyleFinal {
+    background-color: rgb(255, 214, 101);
+}
+.gameOver {
+    background-color: rgb(255, 101, 101);
+}
+.iphoneImage{
+    margin-left: 32.33%;
+    margin-top: -1%;
+    position: absolute;
+    height: 720px;
+    width: 34%;
+}
+.macImage{
+    position: absolute;
+    margin-left: 52.33%;
+    height: 196px;
+    width: 15%;
+    margin-top: 12.5%;
+    margin-left: 72%;
+}
+.butDiv{
+    position: absolute;
+    margin-left: 11.3%;
+    margin-top: 29%;
+}
+.restart{
+    position: absolute;
+    margin-left: 13.8%;
+    margin-top: 22%;
+}
+.playButton{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(245, 202, 12);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(194, 160, 11);
+    animation: playButton 4s;
+}
+.playButton:hover {
+    background-color: rgb(223, 183, 9);
+    transition: all 0.3s;
+}
+.playButton:active {
+  background-color: rgb(170, 141, 13);
+  box-shadow: 0 5px rgb(175, 145, 9);
+  transform: translateY(5px);
+}
+

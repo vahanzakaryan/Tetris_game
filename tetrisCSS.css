@@ -1,0 +1,69 @@
+body{
+    background: url("black.jpg");
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+.playTextDiv{
+    position: relative;
+    color: white;
+    width: 100%;
+    font-size: 178%;
+    margin-top: 16%;
+    margin-left: 47%;
+    position: relative;
+    animation: textStart 1.8s;
+}
+.tetrisImage{
+    margin-left: -40%;
+    margin-top: -11%;
+    transform: scale(0.7);
+    position: absolute;
+    animation: tetrisLogo 1.8s;
+}
+.butDiv{
+    margin-left: 59%;
+    margin-top: 4%;
+}
+.playButton{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(245, 202, 12);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(194, 160, 11);
+    animation: playButton 4s;
+}
+.playButton:hover {
+    background-color: rgb(223, 183, 9);
+    transition: all 0.3s;
+}
+.playButton:active {
+  background-color: rgb(170, 141, 13);
+  box-shadow: 0 5px rgb(175, 145, 9);
+  transform: translateY(5px);
+}
+@keyframes textStart{
+    0% {font-size: 0%; transform:rotatex(0deg);}
+    100% {font-size: 178%; transform:rotatex(360deg);}
+}
+@keyframes tetrisLogo{
+    0% {transform: scale(0);}
+    100% {transform: scale(0.7);}
+}
+@keyframes playButton{
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 100%;}
+}
